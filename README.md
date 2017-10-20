@@ -1,3 +1,5 @@
+#data_pipeline_test
+
 #Summary
 
 The pipelines works as follows:
@@ -19,8 +21,5 @@ To get the code running:
 
    * Install Python 3
    * Install all required packages listed in 'data_pipe.py'
-
-
-#Usage
-
-* Execute the script 'data_pipe.py with the command 'python3 data_pipe.py'
+   
+   
