@@ -1,5 +1,5 @@
 # data_pipeline_test
-We build an automated data pipeline which retrieves new files from a FTP server, cleans it and appends the result to a MySQL/SQLite database. 
+We build an automated data pipeline which retrieves new files from a FTP server, cleans them and appends the result to a MySQL/SQLite database. 
 
 # Summary
    * Step 1
