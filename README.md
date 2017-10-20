@@ -2,8 +2,6 @@
 We build an automated data pipeline which retrieves new files from a FTP server, cleans it and appends the result to a MySQL/SQLite database. 
 
 # Summary
-The pipelines works as follows:
-
    * Step 1
       Set target time (every Monday 9:00am), read file names from remote server, filter new ones, download new ones in "raw_data".
 
@@ -16,7 +14,6 @@ The pipelines works as follows:
 
 # Installation
 To get the code running:
-
    * Install Python 3
    * Install all required packages listed in 'data_pipe.py'
    
