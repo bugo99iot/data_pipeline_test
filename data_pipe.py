@@ -1,5 +1,3 @@
-#add .strip() to remove unwantted whitespaces
-
 import ftplib
 import schedule
 import datetime
@@ -13,8 +11,8 @@ from sqlalchemy import create_engine
 
 #we connect to the FTP server
 def connect():
-        ftp = ftplib.FTP("ftpcluster.loopia.se")
-        ftp.login("pythontest", "Lessfriction2017")
+        ftp = ftplib.FTP("someserver.se")
+        ftp.login("someusername", "somepassword")
         print("OK: Connection to server established.")
         return(ftp)
 
@@ -162,12 +160,13 @@ def do_all():
         except:
             print("A warning message could not be sent.")
 
-#we schedule all jobs for each Monday morning at 9:00am
-schedule.every().wednesday.at("14:49").do(do_all)        
+if __name__ == "__main__":
+        #we schedule all jobs for each Monday morning at 9:00am
+        schedule.every().wednesday.at("14:49").do(do_all)        
 
-#we run the pending jobs
-while True:
-    schedule.run_pending()
+        #we run the pending jobs
+        while True:
+            schedule.run_pending()
 
 
 
