@@ -1,6 +1,6 @@
-#data_pipeline_test
+# data_pipeline_test
 
-#Summary
+# Summary
 
 The pipelines works as follows:
 
@@ -14,8 +14,7 @@ The pipelines works as follows:
    * Step 3
       Fetch clean dataframe, append it to 'customer1_data' table within 'less_friction_database.db', create SQLite dump 'less_friction_dump.sql' and MySQL dump 'less_friction_mydump.sql', send an email of warning to a target user in case of failure.
 
-
-#Installation
+# Installation
 
 To get the code running:
 
